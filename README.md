@@ -53,6 +53,17 @@ python plot_attacks.py
 
 This will save a plot as `attack_plot.png`.
 
+## MITRE ATT&CK Coverage
+
+The fake endpoints in this honeypot correspond to real-world Initial Access techniques:
+
+| Fake Endpoint | Simulates | ATT&CK ID |
+|---|---|---|
+| /login | Credential access attempts | T1078 |
+| /admin | Admin panel exploitation | T1098 |
+| /api/data | API abuse / data exfiltration | T1530 |
+| /files | File access / web shell attempts | T1505.003 |
+
 
 ## Deployment Notes
 
