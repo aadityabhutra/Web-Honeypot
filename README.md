@@ -53,9 +53,10 @@ python plot_attacks.py
 
 This will save a plot as `attack_plot.png`.
 
-## Security Note
 
-This honeypot is for educational and research purposes only. Do not expose it to the public internet without proper precautions.
+## Deployment Notes
+
+Designed for deployment on a cloud VPS or AWS EC2 instance with a public IP. To maximise data collection, expose ports 80/443. For responsible deployment: run inside an isolated VPC, restrict outbound traffic, and rotate your instance every 72 hours to avoid becoming part of an attack infrastructure. All captured data should be treated as potentially hostile — do not execute any payloads from logs.
 
 ## License
 
